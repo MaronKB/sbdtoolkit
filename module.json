@@ -19,7 +19,7 @@
     }
 	],
 	"languages": [],
-	"url": "https://raw.githubusercontent.com/MaronKB/sbdtoolkit",
+	"url": "https://github.com/MaronKB/sbdtoolkit",
 	"manifest": "https://raw.githubusercontent.com/MaronKB/sbdtoolkit/main/module.json",
-	"download": "https://raw.githubusercontent.com/MaronKB/sbdtoolkit/archive/main.zip"
+	"download": "https://github.com/MaronKB/sbdtoolkit/archive/main.zip"
 }

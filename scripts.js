@@ -27,7 +27,7 @@ function GoToChat() {
 		chatmsg.focus();
 		if (chatmsg.value == "") {
 			chatmsg.value = "\"\"";
+			chatmsg.setSelectionRange(1, 1);
 		}
-		chatmsg.setSelectionRange(1, 1);
-		}, 10);
+	}, 10);
 }

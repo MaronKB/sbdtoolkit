@@ -25,7 +25,9 @@ function GoToChat() {
 	
 	document.querySelector('#sidebar-tabs>a').click();setTimeout(function() { 
 		chatmsg.focus();
-		chatmsg.value = "\"\"";
+		if (chatmsg.value == "") {
+			chatmsg.value = "\"\"";
+		}
 		chatmsg.setSelectionRange(1, 1);
 		}, 10);
 }

@@ -17,3 +17,17 @@ td a.sound_link {
 }
 td a.sound_link:hover {
 	text-shadow: 0px 0px 4px red;
+}
+
+#chat div.poweruse-header h2
+{
+    -webkit-border-after: none;
+    border-block-end: none;
+}
+
+#sidebar #chat {
+  overflow-y: hidden;
+}
+.typing-notify.hidden .notify-text {
+  display: none;
+}

@@ -2,12 +2,12 @@
 	"name": "sbdtoolkit",
 	"title": "SBD Toolkit",
 	"description": "<p>송버드 툴킷</p>",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minimumCoreVersion" : "0.8.0",
 	"compatibleCoreVersion": "0.8.8",
 	"author": "mrkb",
 	"esmodules": [],
-	"scripts": [],
+	"scripts": ["scripts.js"],
 	"styles": ["style.css"],
 	"packs": [
     {

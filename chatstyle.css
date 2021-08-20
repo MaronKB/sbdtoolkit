@@ -1,0 +1,26 @@
+.chat-message.message {
+	flex-direction: row;
+}
+.chat-message.message .message-header {
+	flex-direction: column;
+	max-width: 82px;
+	margin-right: 5px;
+    margin: auto 5px auto 0px;
+}
+.chat-message.message .message-header img {
+	width: 72px;
+	height: 72px;
+	margin: 5px auto;
+}
+.chat-message.message .message-header .message-sender {
+	text-align: center;
+}
+.chat-message.message .message-header .message-sender .illandril-chat-enhancements--playerName {
+    font-size: 8px;
+}
+.chat-message.message .message-header .message-metadata {
+	text-align: left;
+}
+.chat-message.message .message-header .message-metadata .message-delete {
+	float: right;
+}

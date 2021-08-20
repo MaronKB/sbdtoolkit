@@ -19,10 +19,28 @@ class ModuleSettings {
 			type: Boolean,
 			default: false
 		});
+		game.settings.register('sbdtoolkit', 'widechat', {
+			name: "대두용 UI",
+			hint: "채팅 헤더를 좌측에 몰아넣습니다. 다른 UI 모듈이나 커스텀 CSS 설정값에 따라 깨져보일 수 있습니다. 이름이 길어서 잘리는 건 책임 안 집니다.",
+			scope: 'world',
+			config: true,
+			type: Boolean,
+			default: false,
+			onChange: value => window.location.reload()
+		});
 	}
 }
 Hooks.once('init', async function() {
 	ModuleSettings.register();
+	if (ModuleSettings.get('widechat')) {
+		var head  = document.getElementsByTagName('head')[0];
+		var link  = document.createElement('link');
+		link.rel  = 'stylesheet';
+		link.type = 'text/css';
+		link.href = 'modules/sbdtoolkit/chatstyle.css';
+		link.media = 'all';
+		head.appendChild(link);
+	}
 });
 
 Hooks.on('controlToken', GoToChat)

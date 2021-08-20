@@ -17,11 +17,6 @@ a.button.message-edit:hover .fa-pencil-alt:before {
 a.button.message-edit .fa-pencil-alt:hover:before {
     color: var(--text-color);
 }
-/*
-.chat-message.message .message-header img {
-	width: 60px;
-	height: 60px;
-}
 .chat-message.message .message-header img {
 	width: 60px;
 	height: 60px;

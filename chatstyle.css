@@ -4,8 +4,7 @@
 .chat-message.message .message-header {
 	flex-direction: column;
 	max-width: 82px;
-	margin-right: 5px;
-    margin: auto 5px auto 0px;
+    margin: auto 10px auto 0px;
 }
 .chat-message.message .message-header img {
 	width: 72px;
@@ -13,14 +12,26 @@
 	margin: 5px auto;
 }
 .chat-message.message .message-header .message-sender {
-	text-align: center;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	flex: 1;
 }
 .chat-message.message .message-header .message-sender .illandril-chat-enhancements--playerName {
     font-size: 8px;
+    display: block;
 }
 .chat-message.message .message-header .message-metadata {
 	text-align: left;
+    margin: 0;
+    padding: 0px 10px 0px 0px;
 }
 .chat-message.message .message-header .message-metadata .message-delete {
 	float: right;
+    width: 0px;
 }
+.chat-message.message .message-content {
+    height: fit-content;
+    margin: auto 0;

@@ -24,7 +24,7 @@
 .chat-message.message .message-content {
     width: calc(100% - 65px);
     align-self: flex-end;
-    min-height: 33px;
+    min-height: 30px;
 }
 .chat-message.message.desc .message-content {
     width: inherit;

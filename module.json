@@ -2,7 +2,7 @@
 	"name": "sbdtoolkit",
 	"title": "SBD Toolkit",
 	"description": "<p>송버드 툴킷</p>",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"minimumCoreVersion" : "0.8.0",
 	"compatibleCoreVersion": "0.8.8",
 	"author": "mrkb",

@@ -11,10 +11,10 @@
     opacity: 0.5;
     font-size: 60px;
 }
-a.button.message-edit:hover .fa-pencil-alt:before {
+.chat-message.message .message-header .message-edit:hover .fa-pencil-alt:before {
     background: var(--text-color);
 }
-a.button.message-edit .fa-pencil-alt:hover:before {
+.chat-message.message .message-header .message-edit .fa-pencil-alt:hover:before {
     color: var(--text-color);
 }
 .chat-message.message .message-header img {

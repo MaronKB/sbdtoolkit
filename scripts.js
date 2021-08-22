@@ -46,16 +46,25 @@ Hooks.once('init', async function() {
 Hooks.on('controlToken', GoToChat)
 
 function GoToChat() {
-	if (!ModuleSettings.get('quickchat') || canvas.tokens.controlled.length < 1) return;
+	if (!ModuleSettings.get('quickchat')) return;
 	const chatmsg = document.getElementById('chat-message');
 	
 	document.querySelector('#sidebar-tabs>a').click();setTimeout(function() { 
 		chatmsg.focus();
-		if (chatmsg.value == "") {
-			chatmsg.value = "\"\"";
+		if (canvas.tokens.controlled.length < 1) {
+			if (chatmsg.value == "\"\"") {
+				chatmsg.value = "";
+			}
+			let str = 0;
+			let end = chatmsg.value.length;
 		}
-		let str = (ModuleSettings.get('selection')) ? 1 : chatmsg.value.length;
-		let end = chatmsg.value.length - 1;
+		else {
+			if (chatmsg.value == "") {
+				chatmsg.value = "\"\"";
+			}
+			let str = (ModuleSettings.get('selection')) ? 1 : chatmsg.value.length;
+			let end = chatmsg.value.length - 1;
+		}
 		chatmsg.setSelectionRange(str, end);
 	}, 10);
 }
